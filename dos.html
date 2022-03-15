@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+ * @param String name
+ * @return String
+ */
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+    </script>
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Direccion</td>
+            <td>Telefono</td>
+            <td>Email</td>
+            <td>Usuario</td>
+            <td>Contraseña</td>
+        </tr>
+        <tr>
+            <td>
+                <script>
+                    document.write(getParameterByName('Nombre'));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(getParameterByName('Apellidos'));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(getParameterByName('Direccion'));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(getParameterByName('Telefono'));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(getParameterByName('Email'));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(getParameterByName('Usuario'));
+                </script>
+            </td>
+            <td>
+                <script>
+                    document.write(getParameterByName('Contraseña'));
+                </script>
+            </td>
+        </tr>     
+    </table>
+</body>
+</html>
