@@ -1,0 +1,13 @@
+td
+*{
+
+    color: rgb(72, 129, 84);
+    font-family: sans-serif;
+}
+table{
+    border: 1px solid black;
+}
+td{
+    border: 1px beige;
+    color: blue;
+}
