@@ -1,7 +1,7 @@
 td
 *{
 
-    color: rgb(72, 129, 84);
+    color: rgb(66, 119, 168);
     font-family: sans-serif;
 }
 table{
@@ -10,4 +10,31 @@ table{
 td{
     border: 1px beige;
     color: blue;
+}
+label{
+    display: inline-block;
+    color:  blue;
+    /*background-color: beige;*/
+    width: 120px;
+}
+div{
+    text-align: center; 
+    background-color: rgb(231, 193, 193);
+}
+.container{
+
+    background-color: aquamarine;
+    width: fit-content;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px 10px 10px;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    color: red;
+}h2{
+    text-align: center;
+    color: black;
+    text-align: justify;
 }
