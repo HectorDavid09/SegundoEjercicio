@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <script>
@@ -18,14 +19,28 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
     </script>
+    
     <table>
+       
         <tr>
             <td>Nombre</td>
+        </tr>
+        <tr>
             <td>Apellido</td>
+        </tr>
+        <tr>
             <td>Direccion</td>
+        </tr>
+        <tr>    
             <td>Telefono</td>
+        </tr>
+        <tr>
             <td>Email</td>
+        </tr>    
+        <tr>    
             <td>Usuario</td>
+        </tr>
+        <tr>
             <td>Contraseña</td>
         </tr>
         <tr>
@@ -66,5 +81,6 @@ function getParameterByName(name) {
             </td>
         </tr>     
     </table>
+
 </body>
 </html>
