@@ -3,13 +3,18 @@ td
 
     color: rgb(66, 119, 168);
     font-family: sans-serif;
+    
 }
+
 table{
     border: 1px solid black;
+    writing-mode:  vertical-rl;
+    text-orientation: sideways-right;
 }
 td{
     border: 1px beige;
     color: blue;
+    
 }
 label{
     display: inline-block;
@@ -19,7 +24,6 @@ label{
 }
 div{
     text-align: center; 
-    background-color: rgb(231, 193, 193);
 }
 .container{
 
